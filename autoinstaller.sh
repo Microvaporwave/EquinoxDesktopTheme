@@ -17,7 +17,7 @@ read -p "Install polywins in required location? [y/N] " yn;
 case $yn in
 	[yY] ) echo cloning polywins;
 		mkdir ~/.config/polybar/scripts/;
-		git clone https://github.com/tam-carre/polywins.git ~/.config/polybar/scripts;
+		git clone https://github.com/tam-carre/polywins.git ~/.config/polybar/scripts/polywins;
 		exit;;
 	[nN] ) echo skipping...;
 		exit;;
