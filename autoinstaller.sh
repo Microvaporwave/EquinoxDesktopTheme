@@ -16,6 +16,8 @@ read -p "Install polywins in required location? [y/N] " yn;
 case $yn in
 	[yY] ) echo cloning polywins;
 		git clone https://github.com/tam-carre/polywins.git ~/.config/polybar/scripts/polywins;
+		sed -i  's|active_text_color="#250F0B"|active_text_color="#ECB3B2"|' ~/.config/polybar/scripts/polywins/polywins.sh
+		sed -i  's|inactive_text_color="#250F0B"|inactive_text_color="#ECB3B2"|' ~/.config/polybar/scripts/polywins/polywins.sh
 		exit;;
 	[nN] ) echo skipping...;
 		exit;;
