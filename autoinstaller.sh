@@ -4,13 +4,13 @@
 
 # Copy icons to icon folder
 mkdir ~/.icons
-cp equinox-icons ~/.icons
+cp -r  equinox-icons ~/.icons
 
 # Move GTK theme(s) to theme folder
-cp equinox-gtk ~/.themes
+cp -r equinox-gtk ~/.themes
 
 # Copy Polybar config to config folder & optionally install polywins in required location
-cp polybar  ~/.config
+cp -r polybar  ~/.config
 
 read -p "Install polywins in required location? [y/N] " yn;
 
