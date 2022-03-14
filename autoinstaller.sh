@@ -16,10 +16,9 @@ case $yn in
         [yY] ) echo Downloading and installing font;
                	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip -P ~/Downloads;
 		sudo mkdir /usr/share/fonts/JetBrainsMono && sudo unzip ~/Downloads/JetBrainsMono.zip -d /usr/share/fonts/JetBrainsMono;
-                exit;;
         [nN] ) echo skipping...;
-                exit;;
         * ) echo invalid response;
+		exit;;
 esac
 
 read -p "Install polywins in required location? [y/N] " yn;
@@ -29,13 +28,12 @@ case $yn in
 		git clone https://github.com/tam-carre/polywins.git ~/.config/polybar/scripts/polywins;
 		sed -i  's|active_text_color="#250F0B"|active_text_color="#ECB3B2"|' ~/.config/polybar/scripts/polywins/polywins.sh;
 		sed -i  's|inactive_text_color="#250F0B"|inactive_text_color="#ECB3B2"|' ~/.config/polybar/scripts/polywins/polywins.sh;
-		exit;;
 	[nN] ) echo skipping...;
-		exit;;
 	* ) echo invalid response;
+		exit;;
 esac
 
-echo All Done
+echo Finished"
 
 
 
