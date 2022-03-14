@@ -15,8 +15,8 @@ read -p "Automatically download & install JetBrainsMono font? [y/N] " yn;
 case $yn in
         [yY] ) echo Downloading and installing font;
                	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip -P ~/Downloads;
-		sudo mkdir /usr/share/fonts/JetBrainsMono && sudo unzip ~/Downloads/JetBrainsMono.zip -d /usr/share/fonts/JetBrainsMono;
-        [nN] ) echo skipping...;
+		sudo mkdir /usr/share/fonts/JetBrainsMono && sudo unzip ~/Downloads/JetBrainsMono.zip -d /usr/share/fonts/JetBrainsMono;;
+        [nN] ) echo skipping...;;
         * ) echo invalid response;
 		exit;;
 esac
@@ -27,8 +27,8 @@ case $yn in
 	[yY] ) echo cloning polywins;
 		git clone https://github.com/tam-carre/polywins.git ~/.config/polybar/scripts/polywins;
 		sed -i  's|active_text_color="#250F0B"|active_text_color="#ECB3B2"|' ~/.config/polybar/scripts/polywins/polywins.sh;
-		sed -i  's|inactive_text_color="#250F0B"|inactive_text_color="#ECB3B2"|' ~/.config/polybar/scripts/polywins/polywins.sh;
-	[nN] ) echo skipping...;
+		sed -i  's|inactive_text_color="#250F0B"|inactive_text_color="#ECB3B2"|' ~/.config/polybar/scripts/polywins/polywins.sh;;
+	[nN] ) echo skipping...;;
 	* ) echo invalid response;
 		exit;;
 esac
