@@ -24,6 +24,6 @@ The dimensions of the polybar were hardcoded for 4k, if you are using lower reso
 
 
 **Other:**  
-If you need a dedicated power button on your taskbar, just middle-mouse-click Xfdesktop, this will show the standard XFCE-shutdown-prompt. This feature was unintentional at first, but proved to quite practical for daily usage.
+If you need a dedicated power button on your taskbar, just middle-mouse-click Xfdesktop, this will show the standard XFCE-shutdown-prompt. This feature was unintentional at first, but proved to be quite practical for daily usage.
 
 
