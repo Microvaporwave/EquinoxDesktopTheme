@@ -8,8 +8,9 @@ cp -r equinox-icons ~/.icons
 # Move GTK theme(s) to theme folder
 cp -r equinox-gtk ~/.themes
 
-# Copy rofi theme to config folder
-cp -r rofi ~/.config
+# Copy rofi themes to config folder
+cp rofi/equinox-dark.rasi /usr/share/rofi/themes/
+cp rofi/equinox-light.rasi /usr/share/rofi/themes/
 
 # Copy Polybar config to config folder & optionally install polywins & JetBrainsMono in required locations
 cp -r polybar  ~/.config
