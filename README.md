@@ -1,7 +1,6 @@
 # EquinoxDesktopTheme
 ![example-image](https://github.com/Microvaporwave/EquinoxDesktopTheme/blob/main/images/desktop.png?raw=true)
-**Equinox**
-A simple theme for XFCE
+A simple theme for XFCE-Desktops
 
 **Materials Used**
 The wallpaper:  [the Secret Place](https://www.artstation.com/artwork/4y1b4) by Aenami upscaled to 4k using [waifu2x](http://waifu2x.udp.jp/)
