@@ -9,8 +9,8 @@ cp -r equinox-icons ~/.icons
 cp -r equinox-gtk ~/.themes
 
 # Copy rofi themes to config folder
-cp rofi/equinox-dark.rasi /usr/share/rofi/themes/
-cp rofi/equinox-light.rasi /usr/share/rofi/themes/
+sudo cp rofi/equinox-dark.rasi /usr/share/rofi/themes/
+sudo cp rofi/equinox-light.rasi /usr/share/rofi/themes/
 
 # Copy Polybar config to config folder & optionally install polywins & JetBrainsMono in required locations
 cp -r polybar  ~/.config
